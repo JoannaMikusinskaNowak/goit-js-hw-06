@@ -15,11 +15,13 @@ const images = [
 
 const liGallery = document.querySelector(".gallery");
 
-images.forEach((image) => {
-  const newGallery = `
- <li> <img src="${image.url}" alt= "${image.alt}"> </li>`;
+const HTMLGallery = images
+  .map(
+    (image) =>
+      `<li style=" display:inline-block; margin: 20px;"> <img src="${image.url}" alt= "${image.alt}" style="max-width:500px; max-height:280px;"> </li>`
+  )
+  .join("");
 
-  liGallery.insertAdjacentHTML("afterbegin", newGallery);
-});
+liGallery.innerHTML = HTMLGallery;
 
 console.log(liGallery);

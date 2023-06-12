@@ -12,10 +12,6 @@ function validateInput() {
       inputForm.classList.add("invalid");
       inputForm.classList.remove("valid");
     }
-
-    console.log(inputForm);
-    console.log(inputValue);
-    console.log(expectedLength);
   });
 }
 validateInput();

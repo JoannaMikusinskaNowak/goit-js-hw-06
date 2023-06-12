@@ -8,12 +8,13 @@ const ingredients = [
 ];
 
 const addClass = document.getElementById("ingredients");
-console.log(addClass);
+const emptyList = [];
 ingredients.forEach((ingredient) => {
   const addTag = document.createElement("li");
   addTag.textContent = ingredient;
   addTag.classList.add("item");
-  addClass.appendChild(addTag);
-
-  console.log(addTag);
+  emptyList.push(addTag);
+});
+emptyList.forEach((li) => {
+  addClass.appendChild(li);
 });

@@ -13,7 +13,3 @@ buttonDecrement.addEventListener("click", () => {
   currentValue -= 1;
   counterValue.textContent = currentValue;
 });
-
-console.log(buttonDecrement);
-console.log(buttonIncrement);
-console.log(currentValue);
