@@ -15,6 +15,4 @@ ingredients.forEach((ingredient) => {
   addTag.classList.add("item");
   emptyList.push(addTag);
 });
-emptyList.forEach((li) => {
-  addClass.appendChild(li);
-});
+addClass.append(...emptyList);
